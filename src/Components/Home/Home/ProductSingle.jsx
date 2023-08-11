@@ -1,14 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ProductSingle = ({product,singleProduct}) => {
      const {name, image, price, display,id} = product;
 
+
+     
+
   return (
     <div className='p-4 '>
         <p className='text-2xl mb-2'>{name}</p>
+
+         <Link to="/product">  
          <div onClick={()=>  singleProduct(id)}>
             <img src={image} alt="" />
          </div>
+         </Link>
 
          <div className='flex justify-between '>       
            <p className='text-lg'>{display}</p>

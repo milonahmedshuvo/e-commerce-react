@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { MyContext } from "../Context/ContextApp";
 
 const Navber = () => {
-    
+      const {user} = useContext(MyContext)
+     
 
     const manuItem = <>
      <Link to="/" className='text-lg font-medium  ml-5 text-black'>Home</Link> 

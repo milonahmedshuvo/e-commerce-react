@@ -3,6 +3,7 @@ import './App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home/Home'
+import Product from './Components/Home/Home/Product/Product'
 
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
          {
            path: "/",
            element: <Home></Home>
+         },
+         {
+           path:"/product",
+           element: <Product></Product>
          }
       ]
     }

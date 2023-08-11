@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ProductSingle from './ProductSingle'
+import { MyContext } from '../../Context/ContextApp'
+import { json } from 'react-router-dom'
 
 const Home = () => {
-      const [productdatails, setProductDatails] = useState(null)
-      console.log("product datails: ", productdatails)
+      const {setProductDatails} = useContext(MyContext)
+
 
 const products =[
   {
@@ -58,6 +60,7 @@ const products =[
        const oneProdcut = products.filter((el) => el.id === id)
        console.log(oneProdcut)
        setProductDatails(oneProdcut)
+       localStorage.setItem("product", JSON.stringify(oneProdcut))
 
   }
 
