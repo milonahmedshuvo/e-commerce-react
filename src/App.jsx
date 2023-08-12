@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home/Home'
 import Product from './Components/Home/Home/Product/Product'
+import CardPage from './Components/CardRoute/CardPage/CardPage'
 
 
 function App() {
@@ -20,7 +21,13 @@ function App() {
          {
            path:"/product",
            element: <Product></Product>
+         },
+         {
+            path:'/cardpage',
+            element: <CardPage></CardPage>
          }
+          
+          
       ]
     }
   ])

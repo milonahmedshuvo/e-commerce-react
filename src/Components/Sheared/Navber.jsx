@@ -9,7 +9,7 @@ const Navber = () => {
     const manuItem = <>
      <Link to="/" className='text-lg font-medium  ml-5 text-black'>Home</Link> 
      <Link to="/" className='text-lg font-medium  ml-5 text-black'>Admin Dashboard</Link>  
-     <Link to="/" className='text-lg font-medium  ml-5 text-black'>Cart View</Link>
+     <Link to="/cardpage" className='text-lg font-medium  ml-5 text-black'>Cart View</Link>
 </>
     
 
