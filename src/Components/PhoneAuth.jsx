@@ -3,6 +3,7 @@ import firebase from 'firebase/compat/app'
 import * as firebaseui from 'firebaseui'
 import { MyContext } from './Context/ContextApp'
 import 'firebaseui/dist/firebaseui.css'
+import { Link, Navigate } from 'react-router-dom'
 
 const PhoneAuth = () => {
       const {auth} = useContext(MyContext)
@@ -13,7 +14,8 @@ const PhoneAuth = () => {
             signInOptions: [
                 firebase.auth.PhoneAuthProvider.PROVIDER_ID
             ],
-            // signInSuccessUrl: ""
+            signInSuccessUrl: "",
+            privacyPolicyUrl: "/"
          })
       })
 
