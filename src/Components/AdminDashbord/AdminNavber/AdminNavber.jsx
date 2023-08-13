@@ -14,8 +14,8 @@ const AdminNavber = () => {
       <Link to="/admindashbord/adminproduct" className="text-lg font-medium  ml-5 text-black">
         Admin product
       </Link>
-      <Link to="/" className="text-lg font-medium  ml-5 text-black">
-        Home
+      <Link to="/admindashbord/addproduct" className="text-lg font-medium  ml-5 text-black">
+         Add product
       </Link>
     </>
   );

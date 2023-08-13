@@ -10,6 +10,7 @@ import CheckOutPage from './Components/CardRoute/CardPage/CheckOutPage'
 import AdminDashbordLayout from './Components/AdminDashbord/AdminDashbordLayout/AdminDashbordLayout'
 import AdminOrder from './Components/AdminDashbord/AdminOrder/AdminOrder'
 import AdminProduct from './Components/AdminDashbord/AdminProduct/AdminProduct'
+import AddProduct from './Components/AdminDashbord/AddProduct/AddProduct'
 
 
 function App() {
@@ -53,7 +54,11 @@ function App() {
           {
               path: "/admindashbord/adminproduct",
               element: <AdminProduct></AdminProduct>
-          }
+          },
+           {
+              path:"/admindashbord/addproduct",
+              element: <AddProduct></AddProduct>
+           }
        ]
     }
   ])
