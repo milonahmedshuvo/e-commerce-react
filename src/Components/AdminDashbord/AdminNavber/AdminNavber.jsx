@@ -8,18 +8,18 @@ const AdminNavber = () => {
 
   const manuItem = (
     <>
-      <Link to="/" className="text-lg font-medium  ml-5 text-black">
+      <Link to="/" className="text-lg font-medium text-blue-400  ml-5 ">
         Home
       </Link>
 
-      <Link to="/admindashbord/adminOrder" className="text-lg font-medium  ml-5 text-black">
+      <Link to="/admindashbord/adminOrder" className="text-lg font-medium  ml-5 text-blue-400">
         Admin order
       </Link>
       
-      <Link to="/admindashbord/adminproduct" className="text-lg font-medium  ml-5 text-black">
+      <Link to="/admindashbord/adminproduct" className="text-lg font-medium  ml-5 text-blue-400">
         Admin product
       </Link>
-      <Link to="/admindashbord/addproduct" className="text-lg font-medium  ml-5 text-black">
+      <Link to="/admindashbord/addproduct" className="text-lg font-medium  ml-5 text-blue-400">
          Add product
       </Link>
     </>

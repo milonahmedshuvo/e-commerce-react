@@ -41,7 +41,7 @@ const CardProduct = ({ product, products, setProducts }) => {
       
        {
         products ? <>
-         <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-b mt-20 mb-12">
+         <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-b mt-20 py-4  mb-12">
         <div>
           <img className="h-36 w-72" src={image} alt="" />
         </div>
@@ -52,12 +52,12 @@ const CardProduct = ({ product, products, setProducts }) => {
           <button onClick={decreaseQuantity}> <FaRegWindowMinimize className="ml-3"></FaRegWindowMinimize> </button>
         </div>
 
-        <div className="flex items-center">
-          <p className="text-xl">{total}</p>
+        <div className="flex justify-center items-center mt-5 md:mt-0 ">
+          <p className="text-xl text-center">{total}</p>
         </div>
 
-        <div className="flex items-center" onClick={handleDelete} >
-          <h1> <FaTrashAlt className="text-2xl hover:text-red-400"></FaTrashAlt> </h1>
+        <div className="flex justify-center items-center mt-5 md:mt-0" onClick={handleDelete} >
+          <h1> <FaTrashAlt className="text-2xl hover:text-red-400 text-center"></FaTrashAlt> </h1>
         </div>
       </div>
 

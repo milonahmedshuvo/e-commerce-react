@@ -8,8 +8,8 @@ const Navber = () => {
 
     const manuItem = <>
      <Link to="/" className='text-lg font-medium  ml-5 text-black'>Home</Link> 
-     <Link to="/admindashbord" className='text-lg font-medium  ml-5 text-black'>Admin Dashboard</Link>  
      <Link to="/cardpage" className='text-lg font-medium  ml-5 text-black'>Cart View</Link>
+     <Link to="/admindashbord" className='text-lg font-medium  ml-5 text-black'>Admin Dashboard</Link>  
 </>
     
 
@@ -44,7 +44,7 @@ const Navber = () => {
         {/* <a className="btn">Button</a> */}
     
           
-        <Link to="/phoneauth" className='uppercase text-black mr-3 text font-medium'>Login</Link>
+        <Link to="/phoneauth" className='uppercase text-black mr-3 text font-medium'>Login/Register</Link>
           
     <img className="rounded-full mr-2 ml-2 h-10 w-10 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2sl3kmWLEHd_w4_ez9nh-2BYZcSQ8GviTaA&usqp=CAU" alt="" />
     

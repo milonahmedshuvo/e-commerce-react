@@ -29,7 +29,7 @@ const AdminOrder = () => {
        </div>
 
        {
-        orderDatas.map((order, id) => <DetailsOrders
+        orderDatas?.map((order, id) => <DetailsOrders
         key={id}
         order={order}
         ></DetailsOrders>)

@@ -14,7 +14,7 @@ const PhoneAuth = () => {
             signInOptions: [
                 firebase.auth.PhoneAuthProvider.PROVIDER_ID
             ],
-            signInSuccessUrl: "",
+            signInSuccessUrl: "https://phone-number-authenticat-988fa.firebaseapp.com/",
             privacyPolicyUrl: "/"
          })
       })

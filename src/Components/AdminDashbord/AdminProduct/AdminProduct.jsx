@@ -12,7 +12,7 @@ const AdminProduct = () => {
       
 
         {
-          adminProducts.map((product, ind) => <Product
+          adminProducts?.map((product, ind) => <Product
           key={ind}
           product={product}
           ></Product> )
