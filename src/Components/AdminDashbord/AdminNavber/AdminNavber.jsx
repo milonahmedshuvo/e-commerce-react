@@ -14,8 +14,8 @@ const AdminNavber = () => {
       <Link to="/admindashbord/adminproduct" className="text-lg font-medium  ml-5 text-black">
         Admin product
       </Link>
-      <Link to="/cardpage" className="text-lg font-medium  ml-5 text-black">
-        Cart View
+      <Link to="/" className="text-lg font-medium  ml-5 text-black">
+        Home
       </Link>
     </>
   );
@@ -48,7 +48,7 @@ const AdminNavber = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2   w-52"
           >
-            {manuItem}
+            
           </ul>
         </div>
         <a className=" text-black font-serif text-2xl font-semibold uppercase">
@@ -56,10 +56,15 @@ const AdminNavber = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{manuItem}</ul>
+        <ul className="menu menu-horizontal px-1">
+
+
+        </ul>
       </div>
       <div className="navbar-end">
-        
+
+
+      {manuItem}
 
         
       </div>

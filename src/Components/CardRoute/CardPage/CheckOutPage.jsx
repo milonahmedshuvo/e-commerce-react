@@ -16,13 +16,16 @@ const CheckOutPage = () => {
       const handleOrder = (event) => {
             event.preventDefault()
             const phone = event.target.phone.value
-            const name = event.target.name.value
+            const userName = event.target.name.value
             const address= event.target.address.value
 
             const orderDatails = {
                 phone,
-                userName:name,
+                userName,
                 address,
+                image,
+                name,
+                totalPrice
             }            
             mergeArray.push(orderDatails)
             localStorage.setItem('orderData',JSON.stringify(mergeArray))

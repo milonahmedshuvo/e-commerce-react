@@ -1,9 +1,39 @@
 import React from 'react'
+import DetailsOrders from './DetailsOrders'
 
 const AdminOrder = () => {
+      const order = localStorage.getItem("orderData")
+      const orderDatas = JSON.parse(order)
+     
   return (
     <div>
-       <h1>order admin</h1>
+       
+
+       <div className='grid grid-cols-2 lg:grid-cols-4 my-10 border-t border-b' >
+
+            <div className='flex justify-center items-center'>
+                <p>Image</p>
+            </div>
+
+            <div className='flex justify-center items-center'>
+                <p>Product name</p>
+            </div>
+
+            <div className='flex justify-center items-center'>
+                <p>Total price</p>
+            </div>
+
+            <div className='flex justify-center items-center'>
+                <p>User name</p>
+            </div>
+       </div>
+
+       {
+        orderDatas.map((order, id) => <DetailsOrders
+        key={id}
+        order={order}
+        ></DetailsOrders>)
+       }
     </div>
   )
 }
