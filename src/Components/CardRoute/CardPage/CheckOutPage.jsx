@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { MyContext } from '../../Context/ContextApp'
+import { toast } from 'react-hot-toast'
 
 const CheckOutPage = () => {
       const {user,totalPrice, productQuantity } = useContext(MyContext)
@@ -29,7 +30,7 @@ const CheckOutPage = () => {
             }            
             mergeArray.push(orderDatails)
             localStorage.setItem('orderData',JSON.stringify(mergeArray))
-            console.log(mergeArray)
+            toast.success("success!")
         }
 
        

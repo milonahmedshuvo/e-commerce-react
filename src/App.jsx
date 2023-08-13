@@ -11,6 +11,7 @@ import AdminDashbordLayout from './Components/AdminDashbord/AdminDashbordLayout/
 import AdminOrder from './Components/AdminDashbord/AdminOrder/AdminOrder'
 import AdminProduct from './Components/AdminDashbord/AdminProduct/AdminProduct'
 import AddProduct from './Components/AdminDashbord/AddProduct/AddProduct'
+import { Toaster } from 'react-hot-toast'
 
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
       <RouterProvider router={router}>
 
       </RouterProvider>
+      <Toaster />
     </>
   )
 }

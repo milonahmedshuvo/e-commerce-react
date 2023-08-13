@@ -8,9 +8,14 @@ const AdminNavber = () => {
 
   const manuItem = (
     <>
+      <Link to="/" className="text-lg font-medium  ml-5 text-black">
+        Home
+      </Link>
+
       <Link to="/admindashbord/adminOrder" className="text-lg font-medium  ml-5 text-black">
         Admin order
       </Link>
+      
       <Link to="/admindashbord/adminproduct" className="text-lg font-medium  ml-5 text-black">
         Admin product
       </Link>
@@ -51,7 +56,7 @@ const AdminNavber = () => {
             
           </ul>
         </div>
-        <a className=" text-black font-serif text-2xl font-semibold uppercase">
+        <a className="  font-serif text-2xl font-semibold text-blue-500 uppercase">
         Admin Dashboard
         </a>
       </div>
