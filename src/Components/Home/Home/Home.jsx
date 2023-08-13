@@ -88,7 +88,8 @@ const products =[
 
  
   
-
+    // setAllProduct(products)
+    localStorage.setItem("adminproduct", JSON.stringify(products))
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-10 mb-20'>

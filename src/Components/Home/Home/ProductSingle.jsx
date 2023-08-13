@@ -16,7 +16,7 @@ const ProductSingle = ({ product, singleProduct, addToCardProduct }) => {
 
       <div className="flex justify-between ">
         <p className="text-lg">{display}</p>
-        <p className="font-medium text-lg">{price}</p>
+        <p className="font-medium text-lg">${price}</p>
       </div>
 
       <Link to="/cardpage">

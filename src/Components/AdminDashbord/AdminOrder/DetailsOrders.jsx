@@ -5,7 +5,7 @@ const DetailsOrders = ({order}) => {
 
 
   return (
-    <div className='grid grid-cols-2 lg:grid-cols-4'>
+    <div className='grid grid-cols-4 md:grid-cols-4'>
 
 
          <div className='flex justify-center items-center'>
@@ -27,7 +27,7 @@ const DetailsOrders = ({order}) => {
             <p>{userName}</p>
          </div>
 
-         
+
     </div>
   )
 }

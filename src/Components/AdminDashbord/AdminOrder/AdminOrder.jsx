@@ -9,7 +9,7 @@ const AdminOrder = () => {
     <div>
        
 
-       <div className='grid grid-cols-2 lg:grid-cols-4 my-10 border-t border-b' >
+       <div className='grid grid-cols-4 md:grid-cols-4 my-10 border-t border-b' >
 
             <div className='flex justify-center items-center'>
                 <p>Image</p>

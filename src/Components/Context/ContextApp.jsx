@@ -15,7 +15,7 @@ const ContextApp = ({children}) => {
     const [productdatails, setProductDatails] = useState([])
     const [totalPrice, setTotalPrice] = useState(0) 
     const [productQuantity, setProductQuantity] = useState(0)
-
+    const [allProduct, setAllProduct] = useState([])
      
 
       const firebaseConfig = {
@@ -45,7 +45,7 @@ const ContextApp = ({children}) => {
 
 
     let auth = firebase.auth()
-    const info = { user,setProductDatails, productdatails, auth, setTotalPrice, totalPrice, productQuantity, setProductQuantity}
+    const info = { user,setProductDatails, productdatails, auth, setTotalPrice, totalPrice, productQuantity, setProductQuantity,allProduct, setAllProduct }
   return (
     <div>
        <MyContext.Provider value={info}>
